@@ -1,0 +1,1052 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>Jijia.Infrastructure</name>
+    </assembly>
+    <members>
+        <member name="M:Jijia.Infrastructure.BasicOperations.BasicOperationEncrypt.MD5HashHex(System.String)">
+            <summary>
+            MD5加密【不可律】
+            </summary>
+            <param name="strText">加密字符串</param>
+            <returns></returns>
+        </member>
+        <member name="M:Jijia.Infrastructure.BasicOperations.BasicOperationEncrypt.EncryptData(System.String,System.String)">
+            <summary>
+            DESCryptoServiceProvider加密【可律】
+            </summary>
+            <param name="pToEncrypt">加密字符串</param>
+            <param name="secretKey">密钥</param>
+            <returns></returns>
+        </member>
+        <member name="M:Jijia.Infrastructure.BasicOperations.BasicOperationEncrypt.DecryptData(System.String,System.String)">
+            <summary>
+            DESCryptoServiceProvider解密方法【可律】
+            </summary>
+            <param name="pToDecrypt">解密字符串</param>
+            <param name="secretKey">密钥</param>
+            <returns></returns>
+        </member>
+        <member name="M:Jijia.Infrastructure.BasicOperations.BasicOperationEncrypt.MobileEncrypt(System.String,System.Int32)">
+            <summary>
+            手机号加密
+            </summary>
+            <param name="pToEncrypt">加密手机号</param>
+            <param name="secretKey">加密密钥</param>
+            <returns></returns>
+        </member>
+        <member name="M:Jijia.Infrastructure.BasicOperations.BasicOperationEncrypt.MobileDecrypt(System.String,System.Int32)">
+            <summary>
+            手机号解密
+            </summary>
+            <param name="pToDecrypt">解密手机号</param>
+            <param name="secretKey">解密密钥</param>
+            <returns></returns>
+        </member>
+        <member name="T:Jijia.Infrastructure.Extensions.ExtensionDataTable">
+            <summary>
+            DataTable 扩展类
+            </summary>
+        </member>
+        <member name="M:Jijia.Infrastructure.Extensions.ExtensionDataTable.DataTableToList``1(System.Data.DataTable)">
+            <summary>
+            DataTable转成List
+            </summary>
+            <typeparam name="T"></typeparam>
+            <param name="dt">数据源</param>
+            <returns></returns>
+        </member>
+        <member name="T:Jijia.Infrastructure.Extensions.ExtensionDateTime">
+            <summary>
+            时间扩展
+            </summary>
+        </member>
+        <member name="M:Jijia.Infrastructure.Extensions.ExtensionDateTime.GetTimeToCompose(System.DateTime,System.Int32)">
+            <summary>
+            获取时间缀
+            </summary>
+            <param name="value">时间</param>
+            <param name="position">获取时间缀长度 0全部 </param>
+            <returns>返回指定长度时间缀</returns>
+        </member>
+        <member name="M:Jijia.Infrastructure.Extensions.ExtensionDateTime.IsDefaultValue(System.DateTime)">
+            <summary>
+            判断时间格式
+            是默认值返回NULL否则返回当前值时间
+            </summary>
+            <param name="value">当前值</param>
+            <returns>返回时间类型</returns>
+        </member>
+        <member name="M:Jijia.Infrastructure.Extensions.ExtensionDateTime.NetOrSqlDefaultValue(System.DateTime,System.String)">
+            <summary>
+            判断时间格式
+            若时间格式是C#默认值或SQL默认值统一返回空字符串
+            </summary>
+            <param name="value">当前值</param>
+            <param name="format">时间格式化</param>
+            <returns>返回字符串类型</returns>
+        </member>
+        <member name="T:Jijia.Infrastructure.Extensions.ExtensionList">
+            <summary>
+            List的扩展方法类
+            </summary>
+        </member>
+        <member name="M:Jijia.Infrastructure.Extensions.ExtensionList.FirstOrNotEmpty``1(System.Collections.Generic.List{``0})">
+            <summary>
+            获取集合中的第一个元素，若集合中没有任何元素，则实例化一个该集合的非空元素
+            </summary>
+            <typeparam name="TSource"></typeparam>
+            <param name="source"></param>
+            <returns>返回结果非空</returns>
+        </member>
+        <member name="M:Jijia.Infrastructure.Extensions.ExtensionList.FirstOrNotEmpty``1(System.Collections.Generic.List{``0},System.Predicate{``0})">
+            <summary>
+            获取集合中匹配的第一个元素，若集合中没有任何元素，则实例化一个该集合的非空元素
+            </summary>
+            <typeparam name="TSource"></typeparam>
+            <param name="source"></param>
+            <param name="match"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Jijia.Infrastructure.Extensions.ExtensionList.ListToDataTable``1(System.Collections.Generic.List{``0})">
+            <summary>
+            List转DataTable
+            </summary>
+            <typeparam name="T"></typeparam>
+            <param name="list">数据源</param>
+            <returns></returns>
+        </member>
+        <member name="T:Jijia.Infrastructure.Extensions.ExtensionNumber">
+            <summary>
+            数字操作扩展类
+            </summary>
+        </member>
+        <member name="M:Jijia.Infrastructure.Extensions.ExtensionNumber.IsOwnerAuthority(System.Int32,System.Int32)">
+            <summary>
+            位运算 [是否包含]
+            </summary>
+            <param name="value"></param>
+            <param name="role"></param>
+            <returns>拥有权限返回true, 否则false</returns>
+        </member>
+        <member name="M:Jijia.Infrastructure.Extensions.ExtensionNumber.IsValueInRange(System.Int32,System.Int32,System.Int32)">
+            <summary>
+            判断一个数值是否在指定范围内
+            </summary>
+            <param name="value"></param>
+            <param name="minValue"></param>
+            <param name="maxValue"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Jijia.Infrastructure.Extensions.ExtensionNumber.CeilingDivide(System.Int32,System.Int32)">
+            <summary>
+            返回大于等于数字被指定值除的商的数字
+            </summary>
+            <param name="value">被除数</param>
+            <param name="divideBy">除数</param>
+            <returns><see cref="T:System.Int32"/></returns>
+        </member>
+        <member name="M:Jijia.Infrastructure.Extensions.ExtensionNumber.Min(System.Int32,System.Int32)">
+            <summary>
+            限制数值的最小值, 当数值小于一定范围时, 则返回最小值
+            </summary>
+            <param name="value">当前数值</param>
+            <param name="minValue">最小值</param>
+            <returns>不小于 <paramref name="minValue"/> 的值</returns>
+        </member>
+        <member name="M:Jijia.Infrastructure.Extensions.ExtensionNumber.Max(System.Int32,System.Int32)">
+            <summary>
+            限制数值的最大值, 当数值大于一定范围时, 则返回最大值
+            </summary>
+            <param name="value">当前数值</param>
+            <param name="maxValue">最大值</param>
+            <returns>不大于 <paramref name="maxValue"/> 的值</returns>
+        </member>
+        <member name="M:Jijia.Infrastructure.Extensions.ExtensionNumber.Compensation(System.Int32,System.Int32,System.Char)">
+            <summary>
+            补差值 
+            不足location左边补0
+            </summary>
+            <param name="value">当前值</param>
+            <param name="location">至少显示位数</param>
+            <param name="symbol">补符号</param>
+            <returns></returns>
+        </member>
+        <member name="M:Jijia.Infrastructure.Extensions.ExtensionNumber.NumberFormat(System.Single,System.String)">
+             <summary>
+             数字格式化
+             </summary>
+             <param name="value"></param>
+            <param name="format">默认小数字后面是0, 即省略</param>
+             <returns></returns>
+        </member>
+        <member name="M:Jijia.Infrastructure.Extensions.ExtensionNumber.NumberFormat(System.Double,System.String)">
+            <summary>
+            数字格式化
+            </summary>
+            <param name="value"></param>
+            <param name="format">默认小数字后面是0, 即省略</param>
+            <returns></returns>
+        </member>
+        <member name="M:Jijia.Infrastructure.Extensions.ExtensionNumber.NumberFormat(System.Decimal,System.String,System.Boolean)">
+            <summary>
+            数字格式化
+            </summary>
+            <param name="value"></param>
+            <param name="format">默认小数字后面是0, 即省略</param>
+            <param name="zeroIsEmpty">true：若结果为0则返回空字符串；false：仅返回格式处理的字符串</param>
+            <returns></returns>
+        </member>
+        <member name="M:Jijia.Infrastructure.Extensions.ExtensionNumber.CheckFractional(System.Decimal,System.Int32)">
+            <summary>
+            数据小数位检测
+            </summary>
+            <param name="value">要检测的数值</param>
+            <param name="fractional">要检测的小数位</param>
+            <returns>true:在小数位内,false:超出小数位</returns>
+        </member>
+        <member name="T:Jijia.Infrastructure.Extensions.ExtensionString">
+            <summary>
+            字符串扩展类
+            </summary>
+        </member>
+        <member name="M:Jijia.Infrastructure.Extensions.ExtensionString.ToBooleanNullable(System.String)">
+            <summary>
+            转换字符串到可空逻辑值
+            </summary>
+            <param name="value"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Jijia.Infrastructure.Extensions.ExtensionString.ToBoolean(System.String)">
+            <summary>
+            转换字符串到逻辑值
+            </summary>
+            <param name="value">要转换的字符串，如果转换失败，则返回 false</param>
+            <returns>转换后的 <see cref="T:System.Boolean"/></returns>
+        </member>
+        <member name="M:Jijia.Infrastructure.Extensions.ExtensionString.ToBoolean(System.String,System.Boolean)">
+            <summary>
+            转换字符串到逻辑值
+            </summary>
+            <param name="value">要转换的字符串</param>
+            <param name="defaultValue">如果转换失败返回的默认值</param>
+            <returns>转换后的 <see cref="T:System.Boolean"/></returns>
+        </member>
+        <member name="M:Jijia.Infrastructure.Extensions.ExtensionString.JsonToModel``1(System.String)">
+            <summary>
+            JSON格式字符串转实体
+            </summary>
+            <param name="value"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Jijia.Infrastructure.Extensions.ExtensionString.NumberFormat(System.String,System.String)">
+            <summary>
+            数字格式化
+            </summary>
+            <param name="value"></param>
+            <param name="format">默认小数字后面是0, 即省略</param>
+            <returns></returns>
+        </member>
+        <member name="M:Jijia.Infrastructure.Extensions.ExtensionString.XmlDESerializer``1(System.String)">
+            <summary>
+            XML转实体
+            </summary>
+            <typeparam name="T"></typeparam>
+            <param name="strXML"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Jijia.Infrastructure.Extensions.ExtensionString.EncryptIDCard(System.String,System.Int32)">
+            <summary>
+            加密字符串后N位
+            </summary>
+            <param name="value">身份证ID</param>
+            <param name="length">要替换为*的位数</param>
+            <returns>隐藏后身份证号</returns>
+        </member>
+        <member name="M:Jijia.Infrastructure.Extensions.ExtensionString.SplitStr(System.String,System.Char)">
+            <summary>
+            字符串切隔
+            </summary>
+            <param name="value">值</param>
+            <param name="split">切割符</param>
+            <returns>返回元组对象</returns>
+        </member>
+        <member name="M:Jijia.Infrastructure.Extensions.ExtensionString.ReplaceStr(System.String,System.Collections.Generic.IDictionary{System.String,System.String})">
+            <summary>
+            替换 模板参数value.Replace("${" + string.Format("{0}", item.Key) + "}", item.Value)
+            <para>framework 4.6.1中新语法</para>
+            </summary>
+            <param name="value">需替换模板</param>
+            <param name="dic">参数字典</param>
+            <returns></returns>
+        </member>
+        <member name="M:Jijia.Infrastructure.Extensions.ExtensionString.Compensation(System.String,System.Int32,System.Char)">
+            <summary>
+            补差值 [不足location左边补0]
+            </summary>
+            <param name="value">当前值</param>
+            <param name="location">至少显示位数</param>
+            <param name="symbol">补符号</param>
+            <returns></returns>
+        </member>
+        <member name="M:Jijia.Infrastructure.Extensions.ExtensionString.FilterInjection(System.String)">
+            <summary> 
+            过滤Sql注入的字符 
+            </summary> 
+            <param name="sqlCondition">要过滤的Sql数据 </param> 
+            <returns> </returns> 
+        </member>
+        <member name="M:Jijia.Infrastructure.Extensions.ExtensionString.AddEsCape(System.String,System.String)">
+            <summary>
+            格式化Sql字符串
+            </summary>
+            <param name="strSql"></param>
+            <param name="sqlCondition"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Jijia.Infrastructure.Extensions.ExtensionString.ReplaceForHuaWei(System.String,System.String,System.String)">
+            <summary>
+            由于华为/小米浏览器 针对参数中含44组合字符替换为空格,故坐特殊处理
+            </summary>
+            <param name="value">字符串</param>
+            <param name="oldChar">旧字符</param>
+            <param name="newChar">新字符</param>
+            <returns></returns>
+        </member>
+        <member name="M:Jijia.Infrastructure.Extensions.ExtensionString.HidePhoneNumber(System.String,System.Char)">
+            <summary>
+            电话号码加隐码【显示前三后四】
+            </summary>
+            <param name="value"></param>
+            <param name="sign">中间数字替换符号 默认“*”</param>
+            <returns></returns>
+        </member>
+        <member name="M:Jijia.Infrastructure.Extensions.ExtensionString.GenerateQRImage(System.String,ThoughtWorks.QRCode.Codec.QRCodeEncoder.ENCODE_MODE,System.Int32,System.Int32,ThoughtWorks.QRCode.Codec.QRCodeEncoder.ERROR_CORRECTION,System.String)">
+            <summary>
+            生成二维码
+            </summary>
+            <param name="QRinfo">二维码内容信息</param>
+            <param name="encode_mode">编码模式</param>
+            <param name="QRCodeScale">像素 值越大生成的二维码图片像素越高</param>
+            <param name="QRCodeVersion">版本(注意：设置为0主要是防止编码的字符串太长时发生错误)</param>
+            <param name="error_correction">错误效验、错误更正(有4个等级：H-L-M-Q)</param>
+            <param name="imageformat">图片格式【Jpeg,Png,Gif】</param>
+            <returns>生成的二维码字节</returns>
+        </member>
+        <member name="M:Jijia.Infrastructure.Extensions.ExtensionString.NetOrSqlDefaultValue(System.String,System.String)">
+            <summary>
+            判断时间格式
+            若时间格式是C#默认值或SQL默认值统一返回空字符串
+            </summary>
+            <param name="value">当前值</param>
+            <param name="format">时间格式化</param>
+            <returns>返回字符串类型</returns>
+        </member>
+        <member name="T:Jijia.Infrastructure.MiddleWare.MicroSoftCache">
+            <summary>
+            进程缓存功能
+            </summary>
+        </member>
+        <member name="M:Jijia.Infrastructure.MiddleWare.MicroSoftCache.SetCache``1(System.String,``0,System.Web.Caching.CacheDependency,System.Double,System.Web.Caching.CacheItemPriority,System.Web.Caching.CacheItemRemovedCallback)">
+            <summary>
+            设置缓存信息
+            </summary>
+            <param name="key">缓存键</param>
+            <param name="t">缓存文本对象</param>
+            <param name="dependency">文件依赖缓存</param>
+            <param name="minutes">缓存时间默认0分钟</param>
+            <param name="priority">优先级</param>
+            <param name="cacheRemoveCallBack">移除缓存回调函数</param>
+        </member>
+        <member name="M:Jijia.Infrastructure.MiddleWare.MicroSoftCache.GetCache``1(System.String)">
+            <summary>
+            获取缓存信息
+            </summary>
+            <param name="key"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Jijia.Infrastructure.MiddleWare.MicroSoftCache.CreateCacheDependency(System.String)">
+            <summary>
+            创建文件依赖对象
+            </summary>
+            <param name="fileName"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Jijia.Infrastructure.MiddleWare.MicroSoftCache.RemoveSingle(System.String)">
+            <summary>
+            移除单个缓存信息
+            </summary>
+            <param name="key"></param>
+        </member>
+        <member name="M:Jijia.Infrastructure.MiddleWare.MicroSoftCache.RemoveAllCache(System.String)">
+            <summary>
+            移除与Key相关的全部缓存
+            </summary>
+            <param name="key">模糊查询 key</param>
+        </member>
+        <member name="M:Jijia.Infrastructure.MiddleWare.MicroSoftCache.RemoveAllCacheToRegex(System.String)">
+            <summary>
+            移除与正则匹配的缓存信息
+            </summary>
+            <param name="regKey">模糊查询 key[正则查找]</param>
+        </member>
+        <member name="T:Jijia.Infrastructure.MiddleWare.RedisCache">
+            <summary>
+            Redis缓存相关操作 
+            </summary>
+        </member>
+        <member name="M:Jijia.Infrastructure.MiddleWare.RedisCache.#ctor(System.Int32)">
+            <summary>
+            全局Redis库 取配置项
+            </summary>
+        </member>
+        <member name="M:Jijia.Infrastructure.MiddleWare.RedisCache.StringSetFromRedis``1(System.String,``0,System.Boolean,System.Double)">
+            <summary>
+            设置字符串类型缓存
+            </summary>
+            <param name="key">缓存Key</param>
+            <param name="value">缓存值</param>
+            <param name="IsExpire">设置过期时间 true 是 false否</param>
+            <param name="expirationTime">过期时间 默认30分钟</param>
+        </member>
+        <member name="M:Jijia.Infrastructure.MiddleWare.RedisCache.StringGetFromRedis``1(System.String)">
+            <summary>
+            获取String类型 Redis集合
+            </summary>
+            <typeparam name="T"></typeparam>
+            <param name="key"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Jijia.Infrastructure.MiddleWare.RedisCache.DelSingleKeyFromRedis(System.String)">
+            <summary>
+            删除单个键信息
+            </summary>
+            <param name="key"></param>
+        </member>
+        <member name="M:Jijia.Infrastructure.MiddleWare.RedisCache.DelMutilKeyFromRedis(System.Collections.Generic.List{System.String})">
+            <summary>
+            删除多个键信息
+            </summary>
+            <param name="key"></param>
+        </member>
+        <member name="M:Jijia.Infrastructure.MiddleWare.RedisCache.HashExist``1(System.String,System.String)">
+            <summary>
+            判断某个键是否存在
+            </summary>
+        </member>
+        <member name="M:Jijia.Infrastructure.MiddleWare.RedisCache.HashSet``1(System.String,System.String,``0)">
+            <summary>
+            单个存储数据到hash表
+            </summary>
+        </member>
+        <member name="M:Jijia.Infrastructure.MiddleWare.RedisCache.HashSet``1(System.String,System.Collections.Generic.List{StackExchange.Redis.HashEntry})">
+            <summary>
+            批量存储数据到Hash表
+            </summary>
+            <typeparam name="T"></typeparam>
+            <param name="hashId"></param>
+            <param name="hashEntrys"></param>
+            <param name="key"></param>
+        </member>
+        <member name="M:Jijia.Infrastructure.MiddleWare.RedisCache.HashSet``1(System.String,System.Collections.Generic.List{``0},System.String)">
+            <summary>
+            批量存储数据到Hash表[反射]
+            </summary>
+            <typeparam name="T"></typeparam>
+            <param name="hashId">haseID</param>
+            <param name="t">实体集合</param>
+            <param name="key">需解析Key的实体ID名称</param>
+            <returns></returns>
+        </member>
+        <member name="M:Jijia.Infrastructure.MiddleWare.RedisCache.HashRemove(System.String)">
+            <summary>
+            移除整个hash值
+            </summary>
+        </member>
+        <member name="M:Jijia.Infrastructure.MiddleWare.RedisCache.HashRemove(System.String,System.String)">
+            <summary>
+            移除单个hash值
+            </summary>
+        </member>
+        <member name="M:Jijia.Infrastructure.MiddleWare.RedisCache.HashGetKeys(System.String)">
+            <summary>
+            获取多个Reids Key
+            </summary>
+            <param name="key"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Jijia.Infrastructure.MiddleWare.RedisCache.HashDelete(System.String,System.Collections.Generic.List{StackExchange.Redis.RedisValue})">
+            <summary>
+            移除hash中的多个值
+            </summary>
+            <param name="key"></param>
+            <param name="dataKeys"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Jijia.Infrastructure.MiddleWare.RedisCache.HashGet``1(System.String,System.String)">
+            <summary>
+            从hash表获取数据
+            </summary>
+        </member>
+        <member name="M:Jijia.Infrastructure.MiddleWare.RedisCache.HashGet``1(System.String)">
+            <summary>
+            获取整个hash的数据
+            </summary>
+        </member>
+        <member name="M:Jijia.Infrastructure.MiddleWare.RedisCache.SetExpire(System.String,System.Nullable{System.TimeSpan})">
+            <summary>
+            设置hash过期时间
+            </summary>
+            <param name="key"></param>
+            <param name="datetime"></param>
+        </member>
+        <member name="M:Jijia.Infrastructure.MiddleWare.RedisCache.SetExpire(System.String,System.Nullable{System.Double})">
+            <summary>
+            设置Key过期时间
+            </summary>
+            <param name="Key">过期Key</param>
+            <param name="Minute">分钟</param>
+            <returns></returns>
+        </member>
+        <member name="T:Jijia.Infrastructure.BasicOperations.BasicOperationComm">
+            <summary>
+            公共类
+            </summary>
+        </member>
+        <member name="M:Jijia.Infrastructure.BasicOperations.BasicOperationComm.CreateSMSCode">
+            <summary>
+            生成6位数短信验证码
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:Jijia.Infrastructure.BasicOperations.BasicOperationComm.GetGUID">
+            <summary>
+            获取32位GUID
+            <para>年月日+时分秒+20位随机数</para>
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:Jijia.Infrastructure.BasicOperations.BasicOperationComm.XmlSerialize``1(``0,System.Boolean)">
+            <summary>
+            实体转XML字符串
+            <para>去除xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"</para>
+            <para>去除xml version="1.0" encoding="utf-8"</para>
+            </summary>
+            <typeparam name="T"></typeparam>
+            <param name="obj">序列化对象</param>
+            <param name="xmlDeclaration">是否移除XML申名【true移除 false否】</param>
+            <returns></returns>
+        </member>
+        <member name="M:Jijia.Infrastructure.BasicOperations.BasicOperationComm.XmlSerialize``1(``0)">
+            <summary>
+            对象序列化为xml字符串
+            </summary>
+            <typeparam name="T"></typeparam>
+            <param name="obj">序列化对象</param>
+            <returns></returns>
+        </member>
+        <member name="T:Jijia.Infrastructure.BasicOperations.BasicOperationCompression">
+            <summary>
+            压缩算法
+            </summary>
+        </member>
+        <member name="M:Jijia.Infrastructure.BasicOperations.BasicOperationCompression.DeflateCompress(System.Byte[])">
+            <summary>
+            Deflate压缩
+            </summary>
+            <param name="data"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Jijia.Infrastructure.BasicOperations.BasicOperationCompression.GzipCompress(System.Byte[])">
+            <summary>
+            Gzip压缩
+            </summary>
+            <param name="data"></param>
+            <returns></returns>
+        </member>
+        <member name="T:Jijia.Infrastructure.BasicOperations.BasicOperationJsonObject">
+            <summary>
+            获取JSON对像
+            </summary>
+        </member>
+        <member name="M:Jijia.Infrastructure.BasicOperations.BasicOperationJsonObject.GetJsonFileObject(System.String,System.String,System.Double)">
+            <summary>
+            获取JSON文件对象
+            </summary>
+            <param name="cacheKey">缓存Key</param>
+            <param name="jsonFilePath">Json文件路径</param>
+            <param name="minutes">缓存过期时间 默认0分钟</param>
+            <returns></returns>
+        </member>
+        <member name="M:Jijia.Infrastructure.BasicOperations.BasicOperationJsonObject.GetJsonObject``1(System.String,System.String,System.Double)">
+            <summary>
+            获取Json文件对应实体对象信息
+            </summary>
+            <typeparam name="T"></typeparam>
+            <param name="cacheKey">缓存Key</param>
+            <param name="jsonFilePath">Json文件路径</param>
+            <param name="minutes">缓存过期时间 默认0分钟</param>
+            <returns></returns>
+        </member>
+        <member name="T:Jijia.Infrastructure.MiddleWare.Log4U">
+            <summary>
+            U+ 日志管理
+            </summary>
+        </member>
+        <member name="M:Jijia.Infrastructure.MiddleWare.Log4U.#ctor(System.Int32,System.Int32,System.Int32)">
+            <summary>
+            日志构造
+            </summary>
+            <param name="projectid">项目ID</param>
+            <param name="userid">用户ID</param>
+            <param name="timeoutremind">请求超时邮件提醒阀值</param>
+        </member>
+        <member name="M:Jijia.Infrastructure.MiddleWare.Log4U.#ctor(System.Int32,System.Int32,System.String,System.String,System.String,System.Int32)">
+            <summary>
+            错误内容构造函数
+            </summary>
+            <param name="projectid">项目ID</param>
+            <param name="userid">用户ID</param>
+            <param name="method">方法</param>
+            <param name="pageUrl">地址</param>
+            <param name="rqUserAgent">参数信息</param>
+            <param name="timeoutremind">请求超时邮件提醒阀值</param>
+        </member>
+        <member name="M:Jijia.Infrastructure.MiddleWare.Log4U.FatalLog``1(``0,System.Action{System.String})">
+            <summary>
+            致命的错误
+            </summary>
+            <param name="msg"></param>
+            <param name="mailRemind">邮件提醒方法</param>
+        </member>
+        <member name="M:Jijia.Infrastructure.MiddleWare.Log4U.ErrorLog(System.Exception)">
+            <summary>
+            错误信息
+            </summary>
+            <param name="ex"></param>
+        </member>
+        <member name="M:Jijia.Infrastructure.MiddleWare.Log4U.WarnLog(System.Exception,System.Action{System.String})">
+            <summary>
+            禁告
+            </summary>
+            <param name="ex"></param>
+            <param name="mailRemind">邮件提醒方法</param>
+        </member>
+        <member name="M:Jijia.Infrastructure.MiddleWare.Log4U.InfoLog``1(``0,System.Action{System.String})">
+            <summary>
+            一般日志信息
+            </summary>
+            <param name="msg">错误信息</param>
+            <param name="mailRemind">邮件提醒方法</param>
+        </member>
+        <member name="M:Jijia.Infrastructure.MiddleWare.Log4U.DebugLog(System.Exception)">
+            <summary>
+            Debug
+            </summary>
+            <param name="ex"></param>
+        </member>
+        <member name="M:Jijia.Infrastructure.MiddleWare.Log4U.TimeToRemind(System.TimeSpan,System.String,System.Action{System.String})">
+            <summary>
+            接口性能日志提醒
+            </summary>
+            <param name="ts"></param>
+            <param name="content">内容</param>
+            <param name="mailRemind">邮件提醒方法</param>
+        </member>
+        <member name="P:Jijia.Infrastructure.MiddleWare.Log4U.TimeOutRemind">
+            <summary>
+            超时邮件提醒
+            </summary>
+        </member>
+        <member name="P:Jijia.Infrastructure.MiddleWare.Log4U.BeginTime">
+            <summary>
+            接口开始执行时间
+            </summary>
+        </member>
+        <member name="P:Jijia.Infrastructure.MiddleWare.Log4U.ErrorInfo">
+            <summary>
+            错误内容
+            </summary>
+        </member>
+        <member name="T:Jijia.Infrastructure.MiddleWare.SendMail">
+            <summary>
+            发送邮件
+            </summary>
+        </member>
+        <member name="M:Jijia.Infrastructure.MiddleWare.SendMail.EmailSmtp(System.String,System.Int32,System.Boolean,System.String,System.String)">
+            <summary>
+            创建邮件协议
+            </summary>
+            <param name="mailHost">主机地址</param>
+            <param name="port">端口</param>
+            <param name="enableSsl">是否启用Ssl认证</param>
+            <param name="userName">帐号</param>
+            <param name="pwd">密码</param>
+            <returns></returns>
+        </member>
+        <member name="M:Jijia.Infrastructure.MiddleWare.SendMail.SetMailAddress(System.Net.Mail.MailAddressCollection,System.String)">
+            <summary>
+            设置邮件响应地址
+            </summary>
+            <param name="address">接收人集合</param>
+            <param name="recipients">多个接收人逗号分隔</param>
+        </member>
+        <member name="M:Jijia.Infrastructure.MiddleWare.SendMail.SendEmail(System.String,System.String,System.String,System.String,System.String,System.String,System.Int32,System.Boolean,System.String)">
+            <summary>
+            异步发送邮件
+            </summary>
+            <param name="userName">发送者</param>
+            <param name="senderAlias">发送者别名</param>
+            <param name="recipients">接收者</param>
+            <param name="body">主体内容</param>
+            <param name="subject">主题</param>
+            <param name="mailHost">邮件主机</param>
+            <param name="port">邮件端口</param>
+            <param name="enableSsl">是否启用Ssl认证 </param>
+            <param name="pwd">邮件密码</param>
+        </member>
+        <member name="T:Jijia.Infrastructure.MiddleWare.RabbitMqConnection">
+            <summary>
+            RabbitMQ 连接
+            </summary>
+        </member>
+        <member name="P:Jijia.Infrastructure.MiddleWare.RabbitMqConnection.IP">
+            <summary>
+            服务器IP地址
+            </summary>
+        </member>
+        <member name="P:Jijia.Infrastructure.MiddleWare.RabbitMqConnection.Port">
+            <summary>
+            服务器端口，默认是 5672
+            </summary>
+        </member>
+        <member name="P:Jijia.Infrastructure.MiddleWare.RabbitMqConnection.HostName">
+            <summary>
+            主机名称
+            </summary>
+        </member>
+        <member name="P:Jijia.Infrastructure.MiddleWare.RabbitMqConnection.Account">
+            <summary>
+            登录用户名
+            </summary>
+        </member>
+        <member name="P:Jijia.Infrastructure.MiddleWare.RabbitMqConnection.Password">
+            <summary>
+            登录密码
+            </summary>
+        </member>
+        <member name="P:Jijia.Infrastructure.MiddleWare.RabbitMqConnection.VirtualHost">
+            <summary>
+            服务器IP地址
+            </summary>
+        </member>
+        <member name="P:Jijia.Infrastructure.MiddleWare.RabbitMqConnection.Heartbeat">
+            <summary>
+            心跳包
+            <para>默认60S</para>
+            </summary>
+        </member>
+        <member name="T:Jijia.Infrastructure.MiddleWare.RabbitQueue">
+            <summary>
+            对列配置信息
+            </summary>
+        </member>
+        <member name="P:Jijia.Infrastructure.MiddleWare.RabbitQueue.QueueName">
+            <summary>
+            队列名称
+            <para>如果是需配置镜像对列【集群】需添加前缀:如</para>
+            <para>正式镜像规则：Mirror_XXXX      前缀一定为：“Mirror_”</para>
+            <para>测试镜像规则：TestMirror_xxxx  前缀一定为：“TestMirror_”</para>
+            <para>开发镜像规则：DevMirror_xxxx   前缀一定为：“DevMirror_”</para>
+            </summary>
+        </member>
+        <member name="P:Jijia.Infrastructure.MiddleWare.RabbitQueue.DurableQueue">
+            <summary>
+            是否持久化该队列
+            <para>【true持久化 false非持久化】</para>
+            </summary>
+        </member>
+        <member name="P:Jijia.Infrastructure.MiddleWare.RabbitQueue.Exclusive">
+            <summary>
+            独有的
+            <para>默认false 若配置true 则对列不能在其他连接的客户消费</para>
+            </summary>
+        </member>
+        <member name="P:Jijia.Infrastructure.MiddleWare.RabbitQueue.AutoDelete">
+            <summary>
+            是否自动删除 
+            <para>默认false</para>
+            </summary>
+        </member>
+        <member name="P:Jijia.Infrastructure.MiddleWare.RabbitQueue.Arguments">
+            <summary>
+            参数信息[默认null]
+            <para>x-message-ttl 被publish到queue中的message被丢弃前能够存活的时间 单位毫秒</para>
+            <para>x-expires 参数控制queue被自动删除前可以处于未使用状态的时间 </para>
+            <para>x-max-length 限定队列的消息的最大值长度，超过指定长度将会把最早的几条删除掉，遵循先进先出的原则</para>
+            <para>x-max-length-bytes 限定队列最大占用的内存空间大小</para>
+            <para>x-dead-letter-exchange 将从队列中删除的消息(大于最大长度、或者过期的等)推送到指定的交换机中去而不是丢弃掉</para>
+            <para>x-dead-letter-routing-key 将删除的消息推送到指定交换机的指定路由键的队列中去</para>
+            <para>x-max-priority 优先级队列,声明队列时先定义最大优先级值(定义最大值一般不要太大),在发布消息的时候指定该消息的优先级,优先级更高的消息先被消费</para>
+            <para>x-queue-mode=lazy 先将消息保存到磁盘上,不放在内存中,当消费者开始消费的时候才加载到内存中,默认为lazy</para>
+            <para>x-queue-master-locator 配置镜像队列</para>
+            </summary>
+        </member>
+        <member name="T:Jijia.Infrastructure.MiddleWare.MSMQ">
+            <summary>
+            Microsoft Message Queue
+            </summary>
+        </member>
+        <member name="M:Jijia.Infrastructure.MiddleWare.MSMQ.CreateQueue(System.String,System.Messaging.QueueAccessMode)">
+            <summary>
+            创建消息队列对象
+            </summary>
+            <param name="path"></param>
+            <param name="mode"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Jijia.Infrastructure.MiddleWare.MSMQ.SendMessage``1(System.Messaging.MessageQueue,``0,System.Messaging.MessageQueueTransaction)">
+            <summary>
+            发送消息
+            </summary>
+            <typeparam name="T"></typeparam>
+            <param name="mq"></param>
+            <param name="t">对象信息</param>
+            <param name="trans">事物信息</param>
+        </member>
+        <member name="M:Jijia.Infrastructure.MiddleWare.MSMQ.ReceiveMessage``1(System.Messaging.MessageQueue,System.Messaging.MessageQueueTransaction)">
+            <summary>
+            获取消息队列信息
+            自动删除队列信息
+            </summary>
+            <typeparam name="T"></typeparam>
+            <param name="mq"></param>
+            <param name="trans"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Jijia.Infrastructure.MiddleWare.MSMQ.SyncReceiveMessage``1(System.Messaging.MessageQueue,System.Messaging.ReceiveCompletedEventHandler)">
+            <summary>
+            异步获取队列消息
+            自动删除队列信息
+            </summary>
+            <typeparam name="T"></typeparam>
+            <param name="mq"></param>
+            <param name="method"></param>
+        </member>
+        <member name="M:Jijia.Infrastructure.MiddleWare.MSMQ.PeekMessage``1(System.Messaging.MessageQueue)">
+            <summary>
+            获取列表信息
+            不删除队列信息
+            </summary>
+            <typeparam name="T"></typeparam>
+            <param name="mq"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Jijia.Infrastructure.MiddleWare.MSMQ.GetMessageEnumerator``1(System.Messaging.MessageQueue)">
+            <summary>
+            获取一条消息 且 手动执行RemoveCurrent删除当前信息
+            Reset 重置到其他对列信息
+            </summary>
+            <typeparam name="T"></typeparam>
+            <param name="mq"></param>
+        </member>
+        <member name="M:Jijia.Infrastructure.MiddleWare.MSMQ.SycnPeekMessage(System.Messaging.MessageQueue,System.Messaging.PeekCompletedEventHandler)">
+            <summary>
+            异步获取队列消息
+            不删除队列信息
+            </summary>
+            <param name="mq"></param>
+            <param name="method"></param>
+        </member>
+        <member name="M:Jijia.Infrastructure.MiddleWare.MSMQ.ReceiveAllMessage``1(System.Messaging.MessageQueue)">
+            <summary>
+            获取列表所有消息
+            </summary>
+            <typeparam name="T"></typeparam>
+            <param name="mq"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Jijia.Infrastructure.MiddleWare.MSMQ.ClearQueue(System.Messaging.MessageQueue)">
+            <summary>
+            删除对列中所有消息
+            </summary>
+            <param name="mq"></param>
+        </member>
+        <member name="T:Jijia.Infrastructure.BasicOperations.BasicOperationXml">
+            <summary>
+            XML公共操作
+            </summary>
+        </member>
+        <member name="M:Jijia.Infrastructure.BasicOperations.BasicOperationXml.#ctor(System.String)">
+            <summary>
+            
+            </summary>
+            <param name="xmlPath">XML路径</param>
+        </member>
+        <member name="M:Jijia.Infrastructure.BasicOperations.BasicOperationXml.FileCacheDependency(System.String)">
+            <summary>
+            加载XML文件
+            </summary>
+            <param name="key">设置文件依赖缓存名称</param>
+            <returns></returns>
+        </member>
+        <member name="M:Jijia.Infrastructure.BasicOperations.BasicOperationXml.LoadXml">
+            <summary>
+            加载XML信息
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:Jijia.Infrastructure.BasicOperations.BasicOperationXml.SelectSingleNode(System.String,System.String)">
+            <summary>
+            查询单个节点信息
+            </summary>
+            <param name="key"></param>
+            <param name="xpath">XML查询路径</param>
+            <returns></returns>
+        </member>
+        <member name="M:Jijia.Infrastructure.BasicOperations.BasicOperationXml.SelectNode(System.Xml.XmlNode,System.String)">
+            <summary>
+            查询XMLNode 集合
+            </summary>
+            <param name="node">Node</param>
+            <param name="xpath"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Jijia.Infrastructure.BasicOperations.BasicOperationXml.SelectNode(System.String,System.String)">
+            <summary>
+            查询XMLNode 集合
+            </summary>
+            <param name="key"></param>
+            <param name="xpath"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Jijia.Infrastructure.BasicOperations.BasicOperationXml.SaveXml(System.Xml.XmlDocument)">
+            <summary>
+            保存XML
+            </summary>
+            <param name="xmlDoc"></param>
+        </member>
+        <member name="P:Jijia.Infrastructure.BasicOperations.BasicOperationXml.XmlPath">
+            <summary>
+            XML路径
+            </summary>
+        </member>
+        <member name="T:Jijia.Infrastructure.MiddleWare.RabbitMq">
+            <summary>
+            消息队列
+            </summary>
+        </member>
+        <member name="M:Jijia.Infrastructure.MiddleWare.RabbitMq.#ctor(Jijia.Infrastructure.MiddleWare.RabbitMqConnection)">
+            <summary>
+            创建构造信息
+            </summary>
+            <param name="conn"></param>
+        </member>
+        <member name="M:Jijia.Infrastructure.MiddleWare.RabbitMq.CreateConn">
+            <summary>
+            创建连接
+            </summary>
+        </member>
+        <member name="M:Jijia.Infrastructure.MiddleWare.RabbitMq.Send``1(``0,Jijia.Infrastructure.MiddleWare.RabbitQueue)">
+            <summary>
+            发送消息 不使用交换机
+            </summary>
+            <typeparam name="T"></typeparam>
+            <param name="messageInfo">消息信息</param>
+            <param name="queue">对列配置</param>
+            <returns></returns>
+        </member>
+        <member name="M:Jijia.Infrastructure.MiddleWare.RabbitMq.Send(System.String,Jijia.Infrastructure.MiddleWare.RabbitQueue)">
+            <summary>
+            发送消息，string类型
+            </summary>
+            <param name="message"></param>
+            <param name="errMsg"></param>
+            <param name="isMirror">存储对列是否镜像处理【true是 false否】</param>
+            <returns></returns>
+        </member>
+        <member name="M:Jijia.Infrastructure.MiddleWare.RabbitMq.QueueConsume``1(System.Func{System.Collections.Generic.List{``0},System.Boolean},RabbitMQ.Client.IModel,RabbitMQ.Client.Events.BasicDeliverEventArgs,System.Collections.Generic.List{``0},System.UInt32,System.Int32)">
+            <summary>
+            消息消费
+            </summary>
+            <typeparam name="T"></typeparam>
+            <param name="method">回调方法</param>
+            <param name="channel"></param>
+            <param name="ea">消费信息</param>
+            <param name="queueList">数据集合</param>
+            <param name="count">当前信息</param>
+            <param name="mutilCount">批量消费笔数<para>默认500条</para></param>
+        </member>
+        <member name="M:Jijia.Infrastructure.MiddleWare.RabbitMq.Receive``1(System.Func{System.Collections.Generic.List{``0},System.Boolean},Jijia.Infrastructure.MiddleWare.RabbitQueue,System.Int32)">
+            <summary>
+            接受消息，使用Action进行处理
+            </summary>
+            <typeparam name="T"></typeparam>
+            <param name="method">回调方法</param>
+            <param name="queue">对列配置信息</param>
+            <param name="MutilCount">批量消费笔数<para>默认500条</para></param>
+        </member>
+        <member name="M:Jijia.Infrastructure.MiddleWare.RabbitMq.DisposeConnection(RabbitMQ.Client.IModel)">
+            <summary>
+            释放链接
+            </summary>
+            <param name="channel"></param>
+        </member>
+        <member name="P:Jijia.Infrastructure.MiddleWare.RabbitMq.conn">
+            <summary>
+            创建连接
+            </summary>
+        </member>
+        <member name="T:Jijia.Infrastructure.MiddleWare.SchedulerConfigModel">
+            <summary>
+            定时任务基本配置项
+            </summary>
+        </member>
+        <member name="P:Jijia.Infrastructure.MiddleWare.SchedulerConfigModel.PageSize">
+            <summary>
+            每次导入多少条数据
+            </summary>
+        </member>
+        <member name="P:Jijia.Infrastructure.MiddleWare.SchedulerConfigModel.CityID">
+            <summary>
+            城市ID
+            </summary>
+        </member>
+        <member name="P:Jijia.Infrastructure.MiddleWare.SchedulerConfigModel.StartDate">
+            <summary>
+            开始时间
+            </summary>
+        </member>
+        <member name="P:Jijia.Infrastructure.MiddleWare.SchedulerConfigModel.EndDate">
+            <summary>
+            结束时间
+            </summary>
+        </member>
+        <member name="P:Jijia.Infrastructure.MiddleWare.SchedulerConfigModel.IsSuccess">
+            <summary>
+            是否执行成功
+            <para>默认成功-> 成功 更新最后执行时间 失败：不更新最后执行时间</para>
+            </summary>
+        </member>
+        <member name="T:Jijia.Infrastructure.MiddleWare.SchedulerBase">
+            <summary>
+            平台定时任务基类
+            </summary>
+        </member>
+        <member name="M:Jijia.Infrastructure.MiddleWare.SchedulerBase.GetConfigModel(System.Int32,System.String,System.String,System.String,System.String)">
+            <summary>
+            获取执行时间
+            </summary>
+            <param name="cityId">城市ID</param>
+            <param name="method">方法名称</param>
+            <param name="url">请求地址</param>
+            <param name="startDate">开始时间</param>
+            <param name="endDate">结束时间</param>
+        </member>
+        <member name="P:Jijia.Infrastructure.MiddleWare.SchedulerBase.SchedulerConfig">
+            <summary>
+            模型对象
+            </summary>
+        </member>
+    </members>
+</doc>

@@ -1,0 +1,9 @@
+E:\SourceCode\SVN\JiaJia.ErpApi\trunk\Zfkr.SubscribeMysql.Services\engine\Zfkr.SubscribeMysql.Common\bin\Debug\netstandard2.0\Zfkr.SubscribeMysql.Common.deps.json
+E:\SourceCode\SVN\JiaJia.ErpApi\trunk\Zfkr.SubscribeMysql.Services\engine\Zfkr.SubscribeMysql.Common\bin\Debug\netstandard2.0\Zfkr.SubscribeMysql.Common.dll
+E:\SourceCode\SVN\JiaJia.ErpApi\trunk\Zfkr.SubscribeMysql.Services\engine\Zfkr.SubscribeMysql.Common\bin\Debug\netstandard2.0\Zfkr.SubscribeMysql.Common.pdb
+E:\SourceCode\SVN\JiaJia.ErpApi\trunk\Zfkr.SubscribeMysql.Services\engine\Zfkr.SubscribeMysql.Common\obj\Debug\netstandard2.0\Zfkr.SubscribeMysql.Common.csproj.CoreCompileInputs.cache
+E:\SourceCode\SVN\JiaJia.ErpApi\trunk\Zfkr.SubscribeMysql.Services\engine\Zfkr.SubscribeMysql.Common\obj\Debug\netstandard2.0\Zfkr.SubscribeMysql.Common.AssemblyInfoInputs.cache
+E:\SourceCode\SVN\JiaJia.ErpApi\trunk\Zfkr.SubscribeMysql.Services\engine\Zfkr.SubscribeMysql.Common\obj\Debug\netstandard2.0\Zfkr.SubscribeMysql.Common.AssemblyInfo.cs
+E:\SourceCode\SVN\JiaJia.ErpApi\trunk\Zfkr.SubscribeMysql.Services\engine\Zfkr.SubscribeMysql.Common\obj\Debug\netstandard2.0\Zfkr.SubscribeMysql.Common.dll
+E:\SourceCode\SVN\JiaJia.ErpApi\trunk\Zfkr.SubscribeMysql.Services\engine\Zfkr.SubscribeMysql.Common\obj\Debug\netstandard2.0\Zfkr.SubscribeMysql.Common.pdb
+E:\SourceCode\SVN\JiaJia.ErpApi\trunk\Zfkr.SubscribeMysql.Services\engine\Zfkr.SubscribeMysql.Common\obj\Debug\netstandard2.0\Zfkr.SubscribeMysql.Common.csprojAssemblyReference.cache

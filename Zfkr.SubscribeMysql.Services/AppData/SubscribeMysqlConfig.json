@@ -1,0 +1,20 @@
+{
+  "CanalServer": {
+    "CanalServerAddress": "192.168.1.79",
+    "CanalServerPort": 11111,
+    "Destination": "example",
+    "Account": "canal",
+    "Pwd": "canal",
+    "BatchSize": 1024,
+    "ThreadWait": 300,
+    "Filter": ".*\\..*",
+    "SyncType": {
+      "JiJiaWorkFlow": [ "Redis", "ES" ]
+    }
+  },
+  "Redis": {
+    "Sentinel": "192.168.1.79:16355",
+    "MasterName": "redis-master7980",
+    "DBNum": 3
+  }
+}

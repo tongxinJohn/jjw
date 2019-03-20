@@ -1,0 +1,75 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{312CB578-4367-4E7F-82E6-3DCD36C7FF6B}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>Zfkr.SubscribeMysql.BLL</RootNamespace>
+    <AssemblyName>Zfkr.SubscribeMysql.BLL</AssemblyName>
+    <TargetFrameworkVersion>v4.6.1</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <Deterministic>true</Deterministic>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Newtonsoft.Json, Version=6.0.0.0, Culture=neutral, PublicKeyToken=30ad4fe6b2a6aeed, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\NuGet\v2\Newtonsoft.Json.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Factory\DataBaseFactory\JiJiaWorkFlow\JiJiaWorkFlowFactory.cs" />
+    <Compile Include="Factory\DataBaseFactory\JiJiaWorkFlow\Table\ApplyInstanceBLL.cs" />
+    <Compile Include="Factory\DataBaseFactory\JiJiaWorkFlow\Table\ApplyRelationBLL.cs" />
+    <Compile Include="Factory\DataBaseFactory\JiJiaWorkFlow\Table\WorkFlowTaskBLL.cs" />
+    <Compile Include="Inter\DataBase\IDataBaseFactory.cs" />
+    <Compile Include="LogSubscribe.cs" />
+    <Compile Include="Inter\Table\ITableFactory.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\..\engine\Zfkr.SubscribeMysql.Connector\Zfkr.SubscribeMysql.Connector.csproj">
+      <Project>{d6c63b4f-5c73-437f-887e-621dac88d1bb}</Project>
+      <Name>Zfkr.SubscribeMysql.Connector</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Zfkr.SubscribeMysql.Buffer\Zfkr.SubscribeMysql.Buffer.csproj">
+      <Project>{b5542103-4b93-4cee-98a4-abf6c4c7f6ab}</Project>
+      <Name>Zfkr.SubscribeMysql.Buffer</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Zfkr.SubscribeMysql.General\Zfkr.SubscribeMysql.General.csproj">
+      <Project>{019D360B-226A-404B-B443-2D1A48CDE223}</Project>
+      <Name>Zfkr.SubscribeMysql.General</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="app.config" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>

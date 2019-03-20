@@ -1,0 +1,20 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>netstandard2.0</TargetFramework>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\..\core\Zfkr.SubscribeMysql.General\Zfkr.SubscribeMysql.General.csproj" />
+    <ProjectReference Include="..\Zfkr.SubscribeMysql.Client\Zfkr.SubscribeMysql.Client.csproj" />
+    <ProjectReference Include="..\Zfkr.SubscribeMysql.Common\Zfkr.SubscribeMysql.Common.csproj" />
+    <ProjectReference Include="..\Zfkr.SubscribeMysql.Protocol\Zfkr.SubscribeMysql.Protocol.csproj" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Reference Include="Newtonsoft.Json">
+      <HintPath>..\..\..\NuGet\v2\Newtonsoft.Json.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+
+</Project>

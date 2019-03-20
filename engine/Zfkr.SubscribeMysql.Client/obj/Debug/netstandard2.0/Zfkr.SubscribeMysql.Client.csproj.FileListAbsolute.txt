@@ -1,0 +1,14 @@
+E:\SourceCode\SVN\JiaJia.ErpApi\trunk\Zfkr.SubscribeMysql.Services\engine\Zfkr.SubscribeMysql.Client\bin\Debug\netstandard2.0\Zfkr.SubscribeMysql.Client.deps.json
+E:\SourceCode\SVN\JiaJia.ErpApi\trunk\Zfkr.SubscribeMysql.Services\engine\Zfkr.SubscribeMysql.Client\bin\Debug\netstandard2.0\Zfkr.SubscribeMysql.Client.dll
+E:\SourceCode\SVN\JiaJia.ErpApi\trunk\Zfkr.SubscribeMysql.Services\engine\Zfkr.SubscribeMysql.Client\bin\Debug\netstandard2.0\Zfkr.SubscribeMysql.Client.pdb
+E:\SourceCode\SVN\JiaJia.ErpApi\trunk\Zfkr.SubscribeMysql.Services\engine\Zfkr.SubscribeMysql.Client\bin\Debug\netstandard2.0\Zfkr.SubscribeMysql.Common.dll
+E:\SourceCode\SVN\JiaJia.ErpApi\trunk\Zfkr.SubscribeMysql.Services\engine\Zfkr.SubscribeMysql.Client\bin\Debug\netstandard2.0\Zfkr.SubscribeMysql.Protocol.dll
+E:\SourceCode\SVN\JiaJia.ErpApi\trunk\Zfkr.SubscribeMysql.Services\engine\Zfkr.SubscribeMysql.Client\bin\Debug\netstandard2.0\Zfkr.SubscribeMysql.Common.pdb
+E:\SourceCode\SVN\JiaJia.ErpApi\trunk\Zfkr.SubscribeMysql.Services\engine\Zfkr.SubscribeMysql.Client\bin\Debug\netstandard2.0\Zfkr.SubscribeMysql.Protocol.pdb
+E:\SourceCode\SVN\JiaJia.ErpApi\trunk\Zfkr.SubscribeMysql.Services\engine\Zfkr.SubscribeMysql.Client\obj\Debug\netstandard2.0\Zfkr.SubscribeMysql.Client.csprojAssemblyReference.cache
+E:\SourceCode\SVN\JiaJia.ErpApi\trunk\Zfkr.SubscribeMysql.Services\engine\Zfkr.SubscribeMysql.Client\obj\Debug\netstandard2.0\Zfkr.SubscribeMysql.Client.csproj.CoreCompileInputs.cache
+E:\SourceCode\SVN\JiaJia.ErpApi\trunk\Zfkr.SubscribeMysql.Services\engine\Zfkr.SubscribeMysql.Client\obj\Debug\netstandard2.0\Zfkr.SubscribeMysql.Client.AssemblyInfoInputs.cache
+E:\SourceCode\SVN\JiaJia.ErpApi\trunk\Zfkr.SubscribeMysql.Services\engine\Zfkr.SubscribeMysql.Client\obj\Debug\netstandard2.0\Zfkr.SubscribeMysql.Client.AssemblyInfo.cs
+E:\SourceCode\SVN\JiaJia.ErpApi\trunk\Zfkr.SubscribeMysql.Services\engine\Zfkr.SubscribeMysql.Client\obj\Debug\netstandard2.0\Zfkr.SubscribeMysql.Client.csproj.CopyComplete
+E:\SourceCode\SVN\JiaJia.ErpApi\trunk\Zfkr.SubscribeMysql.Services\engine\Zfkr.SubscribeMysql.Client\obj\Debug\netstandard2.0\Zfkr.SubscribeMysql.Client.dll
+E:\SourceCode\SVN\JiaJia.ErpApi\trunk\Zfkr.SubscribeMysql.Services\engine\Zfkr.SubscribeMysql.Client\obj\Debug\netstandard2.0\Zfkr.SubscribeMysql.Client.pdb
